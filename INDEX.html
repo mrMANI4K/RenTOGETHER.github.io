@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="RENTOgether est un site de location entre particuliers" />
+    <link rel="icon" href="./images/logo_rentogether.png">
+    <meta name="author" content="CUDENNEC Evann and MODESTO Thomas" />
+    <title> RENTogether </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/hiz1dmg.css">
+    <link rel="stylesheet" href="./css/style_main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="main">
+        <header class="row header-row">
+            <button type="button" id="location" class="btn btn-success loca col-2 tl2">Proposer une location</button>
+            <navbar class="langue col-2 tl2">
+                <ul>
+                    <li class="deroulant"><a href="#"><img id="globe" src="./images/globe.png" alt="Un globe"></a>
+                        <ul class="sous">
+                            <li><a class="deroulant_over" href=""><img class="icon-menu" src="./images/fr.png"
+                                        alt="Drapeau Français">
+                                    Français</a></li>
+                            <li><a class="deroulant_over" href="./pages/HTML_MAIN_HAITIEN.html"><img class="icon-menu"
+                                        src="./images/creo-hait.png" alt="Drapeau Créole">
+                                    Créole Haïtien</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </navbar>
+            <button type="button" id="conn" class="btn btn-outline col-1 tl2">Connexion</button>
+            <button type="button" id="inscr" class="btn btn-success loca col-1 tl2">S'inscrire</button>
+        </header>
+
+        <div class="space row">
+            <div class="logo-parent">
+                <img class="logo" src="./images/logo rentogether+txt.png" alt="logo de RENTogether">
+            </div>
+        </div>
+
+        <section class="menu-article row">
+            <div class="menu-parent">
+                <div id="search-header">
+                    <div class="search-bar">
+                        <input id="search-bar-input" type="search" placeholder="Rechercher">
+                        <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"
+                            class="btn btn-success loca" id="search-bar-submit" type="button">Rechercher</button>
+                    </div>
+                    <p>Des locations... partout en France</p>
+                </div>
+                <div class="search2 row">
+                    <navbar class="search-nav tl2">
+                        <ul>
+                            <li class="deroulant search-deroulant" id="deroulant1"><a href="#"></a>
+                                <ul class="sous">
+                                    <h5>Appartements :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> T1</a></li>
+                                        <li><a class="deroulant_over" href="#"> T2</a></li>
+                                        <li><a class="deroulant_over" href="#"> T3</a></li>
+                                        <li><a class="deroulant_over" href="#"> T4</a></li>
+                                    </div>
+                                    <h5>Maisons :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Plain pied</a></li>
+                                        <li><a class="deroulant_over" href="#"> Avec Etage</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </navbar>
+                    <navbar class="search-nav tl2">
+                        <ul>
+                            <li class="deroulant search-deroulant" id="deroulant2"><a href="#"></a>
+                                <ul class="sous">
+                                    <h5>Machines :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Ordinateurs de bureau</a></li>
+                                        <li><a class="deroulant_over" href="#"> Ordinateurs de Gaming</a></li>
+                                        <li><a class="deroulant_over" href="#"> Ordinateur Portable</a></li>
+                                        <li><a class="deroulant_over" href="#"> Serveurs</a></li>
+                                    </div>
+                                    <h5>Accessoires :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Souris</a></li>
+                                        <li><a class="deroulant_over" href="#"> Claviers</a></li>
+                                        <li><a class="deroulant_over" href="#"> Casques</a></li>
+                                        <li><a class="deroulant_over" href="#"> Manettes</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </navbar>
+                    <navbar class="search-nav tl2">
+                        <ul>
+                            <li class="deroulant search-deroulant" id="deroulant3"><a href="#"></a>
+                                <ul class="sous">
+                                    <h5>Outils d'Entretien :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Outils manuels</a></li>
+                                        <li><a class="deroulant_over" href="#"> Outils à moteur</a></li>
+                                    </div>
+                                    <h5>Produits d'Entretien :</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Liquides</a></li>
+                                        <li><a class="deroulant_over" href="#"> Engrais</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </navbar>
+                    <navbar id="vehicules" class="search-nav tl2">
+                        <ul>
+                            <li class="deroulant search-deroulant" id="deroulant4"><a href="#"></a>
+                                <ul class="sous">
+                                    <h5>Particuliers</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Citadines</a></li>
+                                        <li><a class="deroulant_over" href="#"> Voyages</a></li>
+                                        <li><a class="deroulant_over" href="#"> Familiaux</a></li>
+                                        <li><a class="deroulant_over" href="#"> Sportives</a></li>
+                                        <li><a class="deroulant_over" href="#"> Collections</a></li>
+                                    </div>
+                                    <h5>Utilitaires</h5>
+                                    <div class="li-parent">
+                                        <li><a class="deroulant_over" href="#"> Vehicules de chantier</a></li>
+                                        <li><a class="deroulant_over" href="#"> Fourgons</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </navbar>
+                </div>
+
+                <h2 id="titre_menu">Les plus recherchés : </h2>
+                <div class="parent_boutons">
+                    <div class="parent-1 row">
+                        <div id="bouton1" class="bouton">
+                            <div id="slider1" class="slider">
+                                <p>Serveurs</p>
+                            </div>
+                        </div>
+                        <div id="bouton2" class="bouton">
+                            <div id="slider2" class="slider">
+                                <p>Voitures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parent-2 row">
+                        <div id="bouton3" class="bouton">
+                            <div id="slider3" class="slider">
+                                <p>Appartements</p>
+                            </div>
+                        </div>
+                        <div id="bouton4" class="bouton">
+                            <div id="slider4" class="slider">
+                                <p>Bateaux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer text-center">
+        <div class="texto-parent">
+            <p class="texto">
+            <h6><a href="./INDEX.html">ACCUEIL</a></h6>
+            <h6><a href="./pages/CONTACT.html">CONTACT</a> </h6>
+            <h6><a href="./pages/LEGAL.html">CGU</a></h6>
+            <h6><a href="./pages/A PROPOS HTML.html">A PROPOS</a></h6>
+            </p>
+        </div>
+
+        <div class="texte-parent">
+            <p class="texte">
+                <i class="fa-solid fa-copyright"></i>
+                RENTogether
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
